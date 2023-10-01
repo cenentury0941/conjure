@@ -13,6 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from "../../images/logo_orange_alpha_small.png";
 import "./AppBar.css";
 import { bgcolor } from '@mui/system';
+import { useNavigate } from 'react-router-dom';
 
 const pages = ['Home', 'Repo', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -36,6 +37,8 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  const navigate = useNavigate();
+
   return (
     <AppBar className='AppBar' sx={{bgcolor:"#111"}} position="static">
       <Container maxWidth="xl">
@@ -45,7 +48,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            onClick={ () => {navigate("/")} }
             sx={{
               mr: 3,
               display: { xs: 'none', md: 'flex' },
@@ -55,6 +58,8 @@ function ResponsiveAppBar() {
               letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
+              cursor:'pointer',
+              userSelect:'none'
             }}
           >
             Conjure
@@ -101,7 +106,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            onClick={ () => {navigate("/")} }
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -111,6 +116,8 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              cursor:'pointer',
+              userSelect:'none'
             }}
           >
             Conjure

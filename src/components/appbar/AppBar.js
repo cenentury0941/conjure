@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            onClick={ () => {navigate("/")} }
+            onClick={ () => {navigate("/conjure/")} }
             sx={{
               mr: 3,
               display: { xs: 'none', md: 'flex' },
@@ -106,7 +106,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            onClick={ () => {navigate("/")} }
+            onClick={ () => {navigate("/conjure/")} }
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

@@ -19,20 +19,28 @@
     transition-timing-function: ease-in-out;
 }
 
-.Generate-Show-Slide-1 {
+.Generate-Show-Slide--1 {
     transform: translateY(-0%);
 }
 
+.Generate-Show-Slide-0 {
+    transform: translateY(-16.6%);
+}
+
+.Generate-Show-Slide-1 {
+    transform: translateY(-33.2%);
+}
+
 .Generate-Show-Slide-2 {
-    transform: translateY(-25%);
+    transform: translateY(-49.8%);
 }
 
 .Generate-Show-Slide-3 {
-    transform: translateY(-50%);
+    transform: translateY(-66.6%);
 }
 
 .Generate-Show-Slide-4 {
-    transform: translateY(-75%);
+    transform: translateY(-83.5%);
 }
 
 .Generate-Slide {

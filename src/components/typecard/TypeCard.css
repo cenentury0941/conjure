@@ -1,0 +1,21 @@
+.TypeCard-Main-Container {
+    display: flex;
+    height: 25vh;
+    width: 25vw;
+    border-radius: 15px;
+    background-color: #f9ede1;
+    border: 2px solid #9b7955;
+    transition-duration: 0.1s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.TypeCard-Main-Container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px black;
+}
+
+.TypeCard-Main-Container:active {
+    transform: scale(1.04);
+    background-color: #e6dbd0;
+}

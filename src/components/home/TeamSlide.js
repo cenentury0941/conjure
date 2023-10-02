@@ -4,7 +4,7 @@ const card = (profile_picture, name, job_titile) => {
   return (
     <div class="card">
       <div class="card-info">
-        <div class="card-avatar"></div>
+        <div class={"card-avatar " + profile_picture}></div>
 
         <div class="card-title">{name}</div>
 
@@ -54,7 +54,7 @@ function TeamSlide() {
 
         <div className="teamflex">
           {team_members.map((member) =>
-            card("dp", member, "Associate Software Engineer")
+            card(member, member, "Associate Software Engineer")
           )}
         </div>
       </div>

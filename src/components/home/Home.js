@@ -23,7 +23,7 @@ function HomeSlide(){
         <div className="Home-Horizontal-Divider">
             <div className="Home-Button-Container">
                 <div className="Button" onClick={ () => {window.location.assign("https://github.com/cenentury0941/conjure")} }>Go To Repo</div>
-                <div className="Button" onClick={ () => {navigate("/conjure/generate")}}>Create Something</div>
+                <div className="Button" onClick={ () => {navigate("/generate")}}>Create Something</div>
             </div>
         </div>
         <div className="Home-Down-Arrow"/>

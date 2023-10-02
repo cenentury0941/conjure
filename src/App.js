@@ -26,9 +26,9 @@ function App() {
       <BrowserRouter>
       <ResponsiveAppBar />
       <Routes>
-        <Route path="/conjure/" element={<HomePage />}/>
-        <Route path="/conjure/generate" element={<GeneratePage />}/>
-        <Route path="/" element={<Login />}/>
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/generate" element={<GeneratePage />}/>
+        <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<SignUp />}/>
       </Routes>
     </BrowserRouter>

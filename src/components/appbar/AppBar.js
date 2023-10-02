@@ -17,7 +17,7 @@ import { useNavigate } from 'react-router-dom';
 
 const pages = ['Home', 'Repo', 'About','Login'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-const links = ['/conjure/','https://github.com/cenentury0941/conjure','https://www.youtube.com/watch?v=iQBGLdLiN64','/']
+const links = ['/conjure/','https://github.com/cenentury0941/conjure','https://www.youtube.com/watch?v=iQBGLdLiN64','/conjure/login']
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -34,9 +34,16 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
+  const navigate = useNavigate();
+
   const handleRedirectPage = (index) => {
     if (index >= 0 && index < links.length) {
       const target = index == 0 ? '_self' : '_blank';
+      if(index===3)
+      {
+        navigate("/login")
+        return;
+      }
       window.open(links[index], target);
     }
   };
@@ -45,7 +52,6 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
-  const navigate = useNavigate();
 
   return (
     <AppBar className='AppBar' sx={{bgcolor:"#111"}} position="static">
@@ -56,7 +62,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            onClick={ () => {navigate("/conjure/")} }
+            onClick={ () => {navigate("/")} }
             sx={{
               mr: 3,
               display: { xs: 'none', md: 'flex' },
@@ -114,7 +120,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            onClick={ () => {navigate("/conjure/")} }
+            onClick={ () => {navigate("/")} }
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

@@ -36,10 +36,10 @@ function GeneratePage(){
                 <GenerateSlide1 setOpCode={setOpCode} nextSlide={nextSlide} prevSlide={prevSlide}></GenerateSlide1>
             </div>
             <div className="Generate-Slide">
-                <GenerateSlide2 opCode={opCode} setInitialGen={setInitialGen} setInitialMessages={setInitialMessages} prevSlide={prevSlide} nextSlide={nextSlide}></GenerateSlide2>
+                <GenerateSlide2 opCode={opCode} setInitialGen={setFinalGen} setInitialMessages={setInitialMessages} prevSlide={prevSlide} nextSlide={nextSlide}></GenerateSlide2>
             </div>
             <div className="Generate-Slide">
-            <GenerateSlide3 opCode={opCode} setFinalGen={setFinalGen} initialGen={initialGen} initialMessages={intialMessages} prevSlide={prevSlide} nextSlide={nextSlide}></GenerateSlide3>
+            <GenerateSlide3 opCode={opCode} finalGen={finalGen} setFinalGen={setFinalGen} initialGen={initialGen} initialMessages={intialMessages} prevSlide={prevSlide} nextSlide={nextSlide}></GenerateSlide3>
             </div>
             <div className="Generate-Slide">
             <GenerateSlide4 finalGen={finalGen} prevSlide={prevSlide} nextSlide={nextSlide} firstSlide={firstSlide}></GenerateSlide4>

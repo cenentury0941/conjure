@@ -6,16 +6,14 @@ import { Button } from "@mui/material";
 
 function GenerateSlide3(props){
 
-    useEffect( () => {props.setFinalGen(props.initialGen)} , [props] );
-
     return (<div className="Generate-Slide3-Main-Container">
     <div className="Generate-Slide-Title">Here's a baseline generation
     <div className="Generate-Slide-Content">Feel free to suggest modifications to the generation!</div>
     </div>
     <div className="Generate-Slide3-Overview-Container">  
     <div className="Generate-Slide3-Horizontal-Container">
-    <Bot initialMessages={props.initialMessages} opCode={props.opCode} />
-    <div className="Generate-Slide3-Output-Container"><p>{props.initialGen}</p></div>
+    <Bot currentCode={props.finalGen} updateCode={props.setFinalGen} initialMessages={props.initialMessages} opCode={props.opCode} />
+    <div className="Generate-Slide3-Output-Container"><p>{props.finalGen}</p></div>
     </div>
     <div className="Generate-Slide3-Button-Row">
         <Button variant="contained" color="primary" onClick={()=>{props.prevSlide()}}>

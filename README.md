@@ -1,7 +1,7 @@
 
 # Conjure : Generative AI based rapid prototyping
 
-Hosted link : cenentury0941.github.io/conjure [GithubPages Mirror Link]
+Hosted link : https://cenentury0941.github.io/conjure [GithubPages Mirror Link]
 
 ##About
 

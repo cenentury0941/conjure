@@ -17,6 +17,7 @@ import { useNavigate } from 'react-router-dom';
 
 const pages = ['Home', 'Repo', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const links = ['/conjure/','https://github.com/cenentury0941/conjure','YouTubelink']
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -33,6 +34,13 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
+  const handleRedirectPage = (index) => {
+    if (index >= 0 && index < links.length) {
+      const target = index == 0 ? '_self' : '_blank';
+      window.open(links[index], target);
+    }
+  };
+  
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
@@ -123,10 +131,11 @@ function ResponsiveAppBar() {
             Conjure
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } , marginLeft:'auto', justifyContent:'end' }}>
-            {pages.map((page) => (
+            {pages.map((page,index) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                // onClick={handleCloseNavMenu}
+                onClick={()=>handleRedirectPage(index,page)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}

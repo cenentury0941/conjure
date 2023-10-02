@@ -38,7 +38,7 @@ const team_members = [
   "Rakhul",
   "Sravani",
   "Harshith",
-  "Priyadrashini",
+  "Priyadharshini",
   "Ashwin",
 ];
 

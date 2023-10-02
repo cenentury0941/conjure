@@ -15,9 +15,9 @@ import "./AppBar.css";
 import { bgcolor } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['Home', 'Repo', 'About'];
+const pages = ['Home', 'Repo', 'About','Login'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-const links = ['/conjure/','https://github.com/cenentury0941/conjure','YouTubelink']
+const links = ['/conjure/','https://github.com/cenentury0941/conjure','YouTubelink','/']
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

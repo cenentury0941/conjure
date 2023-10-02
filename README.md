@@ -1,6 +1,25 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Conjure : Generative AI based rapid prototyping
+
+Hosted link : cenentury0941.github.io/conjure [GithubPages Mirror Link]
+
+##About
+
++ Conjure is a generative AI powered prototyping tool aimed towards speeding up and streamlinig the usage of AI services in developing basic wireframes of various kinds required in the initial stages of a project lifecycle.
++ Conjure is envisioned to be a universal solution in developing project resources such as Database schemas, IAC scripts, UI elements and more subject to availability of Generative AI models provided by APIs such as openAI API.
+
+##How it works
+
++ Conjure is designed to be as simple and intuititive to use as possible. The user first select what it is that they want to develop.
++ Once the rough design is generated, the user can then prompt further changes on what has been generated to tweak it
++ Upon finalizing the content, the user will be able to proceed with exporting or deploying the generated content as they require.
+
+##Future Work
++ Being mainly powered by Generative AI technology, Conjure is just getting started
++ We plan on further developing Conjure as and when newer and more optimized models are available for specific code generation
++ We also plan on looking into other use cases for AI powered rapid prototyping tools and better means of integrating into the production cycle of projects
+            
+---------------------------------------
 
 ## Available Scripts
 

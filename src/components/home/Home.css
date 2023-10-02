@@ -77,6 +77,10 @@
     justify-content: center;
 }
 
+.Home-No-Margin {
+    margin: 0%;
+}
+
 .Home-Heading {
     display: flex;
     color: #4e272f;
@@ -97,6 +101,16 @@
     overflow: hidden;
     align-items: start;
     text-align: justify;
+}
+
+.Home-Content-Center {
+    width: 80%;
+    color: #4e272f;
+    font-size: 1.5rem;
+    margin: 0.5vmin;
+    overflow: hidden;
+    align-items: start;
+    text-align: center;
 }
 
 .Home-Content-Container {

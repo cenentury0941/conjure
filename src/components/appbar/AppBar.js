@@ -17,7 +17,7 @@ import { useNavigate } from 'react-router-dom';
 
 const pages = ['Home', 'Repo', 'About','Login'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-const links = ['/conjure/','https://github.com/cenentury0941/conjure','YouTubelink','/']
+const links = ['/conjure/','https://github.com/cenentury0941/conjure','https://www.youtube.com/watch?v=iQBGLdLiN64','/']
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
